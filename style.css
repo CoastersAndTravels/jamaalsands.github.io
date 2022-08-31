@@ -48,7 +48,7 @@ a:link {
   a.hiremetext:visited{
     color: var(--white);
   }
-  a.hiremetext:active,   a.hiremetext:hover{
+  a.hiremetext:active,   a.hiremetext:hover, .hiremetext:link{
     color: var(--white);
     text-decoration: none;
   }
