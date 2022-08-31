@@ -15,6 +15,9 @@ html { font-family: 'Inter', sans-serif; }
 } 
 
 
+html {
+    scroll-behavior: smooth;
+  }
 
 /*Color Variables*/
 :root{
@@ -25,6 +28,31 @@ html { font-family: 'Inter', sans-serif; }
     --red: #DB5461;
     --yellow: #ECBA82;
 }
+
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+   
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
+
+  a.hiremetext:visited{
+    color: var(--white);
+  }
+  a.hiremetext:active,   a.hiremetext:hover{
+    color: var(--white);
+    text-decoration: none;
+  }
+  
 
 
 
@@ -109,8 +137,13 @@ h1{
   
 }
 
-.button1:hover{
+.button1:active, .submit:active{
     background-color: #7a0b16;
+    
+}
+
+.submit:hover{
+    cursor: pointer;
 }
 body{
   /*  font-family: 'Jockey One', sans-serif;
@@ -285,11 +318,17 @@ body{
     width: 100%;
     height: auto;
     text-align: center;
+ 
   
 }
 .contact{
     color: var(--dark);
     background-color: var(--green);
+    
+}
+
+.contact {
+    text-align: center;
 }
 
 .footer{
@@ -297,6 +336,36 @@ body{
     color: var(--yellow);
     text-align: center;
 }
+
+#name, #email{
+    height: 30px;
+    width: 400px;
+    font-size: 1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+#message {
+    width: 400px;
+    height:200px;
+    font-size: 1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+.submit {
+  
+  background-color: #DB5461;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  font-size: 2rem;
+ 
+ 
+}
+
 
 
 
@@ -333,7 +402,29 @@ body{
         border-color: var(--dark);
         overflow: hidden;
     }
+
+    #name, #email{
+        height: 30px;
+        width: 250px;
+        font-size: 1rem;
+        padding-left: 10px;
+        padding-right: 10px;
+        
+    }
     
+    #message {
+        width: 250px;
+        height:200px;
+        font-size: 1rem;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+    }
+    
+    .projects{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
